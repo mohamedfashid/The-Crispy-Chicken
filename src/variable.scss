@@ -2,13 +2,12 @@
 /******* Customized Bootstrap ********/
 
 $primary: #e00614;
+$secondary: #fff;
+$tertiary: #464543;
+
 $light: #F1F8FF;
 $grey:#464543;
 $dark: #0F172B;
-
-$font-family-base: 'Heebo', sans-serif;
-
-$headings-font-family: 'Nunito', sans-serif;
 
 $body-bg: $light;
 
@@ -64,10 +63,3 @@ $offcanvas-width: 300px;
 
 ////////////////////////////////////////custom colors/////////////////////////////////////////
 
-
-// Custom width
-@mixin min($width) {
-  @media (max-width: #{$width}) {
-    @content;
-  }
-}

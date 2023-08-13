@@ -1,0 +1,29 @@
+@import "../../../variable.scss";
+
+
+.mainlist{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.width-fit{
+    width: fit-content !important;
+}
+
+.f-22{
+    font-size:22px
+}
+
+h3{
+    color: #fff !important;
+}
+
+.bor{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,17 @@
+
+/******* Customized Bootstrap ********/
+
+$primary: #e00614;
+$secondary: #fff;
+$tertiary: #464543;
+
+$light: #F1F8FF;
+$grey:#464543;
+$dark: #0F172B;
+
+// Custom width
+@mixin min($width) {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

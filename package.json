@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "git": "git add . && git commit -m 'update' && git push",
+    "predeploy": "ng build --configuration production --base-href https://mohamedfashid.github.io/The-Crispy-Chicken/",
+    "deploy": "gh-pages -d dist/m-i-10",
+    "upload": "ng build --configuration production --base-href ./"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +22,9 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.2",
+    "gsap": "^3.12.2",
     "owl-carousel": "^1.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -28,6 +34,8 @@
     "@angular-devkit/build-angular": "^14.2.1",
     "@angular/cli": "~14.2.1",
     "@angular/compiler-cli": "^14.0.0",
+    "@types/aos": "^3.0.4",
+    "@types/gsap": "^3.0.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",

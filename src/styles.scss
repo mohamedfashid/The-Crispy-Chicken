@@ -15,6 +15,18 @@
   src: url(assets/font/Roboto-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Rowdies";
+  src: url(assets/font/Rowdies-Bold.ttf);
+}
+
+@font-face {
+  font-family: "RowdiesRegular";
+  src: url(assets/font/Rowdies-Regular.ttf);
+}
+
+
+//common//
 
 html {
   scroll-behavior: smooth;
@@ -29,16 +41,107 @@ body {
   line-height: 1.2;
   height: 100%;
   // overflow: hidden;
+  background-color: #fff;
 }
 b{
     font-family: "RobotoBold", sans-serif;
 }
 
+.head{
+  color: #FFFFFF;
+  // font-family: "Rowdies", Sans-serif;
+  font-size: 4rem !important;
+  font-weight: 800;
+  line-height: 1em;
+  letter-spacing: 1px;
+  text-shadow: 8px 7px 0px rgba(22.04687499999999, 22.04687499999999, 22.04687499999999, 0.47);
+
+}
+.rel{
+  position: relative;
+}
+
+.halal_s{
+  width: 20px;
+
+}
+
+.halal_l{
+  width: 30px;
+  position: absolute;
+  left: 100%;
+}
+
+.rowdies{
+  font-family: "Rowdies" !important;
+}
+
+.tworem{
+  font-size:2rem;
+}
+
+.gra_txt{
+  font-size: 1rem;
+  color: $primary;
+}
+
+.section-white{
+  background-color: #fff;
+}
+.section-light{
+  background-color: $light;
+}
+
+.white{
+  color: #fff;
+}
+//flex item
+
+
+.facenter{
+  align-items: center;
+}
+
+.fjcenter{
+  justify-content: center;
+}
+
+
+.fcenter{
+  align-items: center;
+  justify-content: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+}
+
+.bg-yel{
+  background-color: #fff200;
+}
+//common//
+
+//bootstrap overwrite//
+
+.container-xxl{
+  max-width: unset !important;
+  padding: 4rem 0 !important;
+}
+//bootstrap overwrite//
+
 /********** Template CSS **********/
 :root {
-  --primary: #FEA116;
+  --primary: #e00614;
   --light: #F1F8FF;
   --dark: #0F172B;
+}
+
+.fff{
+  color: #fff;
 }
 
 .ff-secondary {
@@ -192,7 +295,8 @@ b{
 
 /*** Hero Header ***/
 .hero-header {
-  background: linear-gradient(rgb(15 23 43 / 79%), rgba(15, 23, 43, .9)), url(assets/images/bg-hero.jpg);
+  // background: linear-gradient(rgb(15 23 43 / 79%), rgba(15, 23, 43, .9)), url(assets/images/bg-hero.jpg);
+  background: linear-gradient(rgb(15 23 43 / 40%), rgba(15, 23, 43, .9)), url(assets/image/newhome.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,6 +321,7 @@ b{
 .section-title {
   position: relative;
   display: inline-block;
+  font-family: "RowdiesRegular";
 }
 
 .section-title::before {
@@ -249,8 +354,11 @@ b{
 
 /*** Service ***/
 .service-item {
-  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  // box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  box-shadow: 11px 15px 3px 0px rgba(0, 0, 0, 0.08);
+  border: 1px solid  rgba(0, 0, 0, 0.08);
   transition: .5s;
+  height: 100%;
 }
 
 .service-item:hover {
@@ -389,6 +497,50 @@ b{
   opacity: 1;
 }
 
+///carousel{
+
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+  height: 200px !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+  background: $light !important;
+  border-color: $light !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+  color: $dark !important;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #CCCCCC !important;
+  background:  var(--primary);
+  background-color: $light;
+  border-radius: 15px;
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
 
 /*** Team ***/
 .team-item {
@@ -411,45 +563,6 @@ b{
 
 .team-item .btn {
   border-radius: 38px 38px 0 0;
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
-  transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-  background: var(--primary) !important;
-  border-color: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-  color: var(--light) !important;
-}
-
-.testimonial-carousel .owl-dots {
-  margin-top: 24px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #CCCCCC;
-  border-radius: 15px;
-  transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-  background: var(--primary);
-  border-color: var(--primary);
 }
 
 

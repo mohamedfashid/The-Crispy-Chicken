@@ -7,16 +7,22 @@ export class MainService {
 
   constructor() { }
 
+  scroll = false
+
+  ngOnInit(): void {
+    this.scroll = false;
+  }
+
   menu = [
     {
       "name": "Home",
       "open": false,
-      "url": "",
+      "url": "/home",
     },
     {
       "name": "Services",
       "open": false,
-      "url": "",
+      "url": "/services",
       "child": [
         {
           "name": "Franchise",
@@ -35,7 +41,7 @@ export class MainService {
     {
       "name": "About us",
       "open": false,
-      "url": "",
+      "url": "/aboutus",
       "child": [
         {
           "name": "CC India",
@@ -50,12 +56,12 @@ export class MainService {
     {
       "name": "Contact us",
       "open": false,
-      "url": "",
+      "url": "/contactus",
     },
     {
       "name": "Our food",
       "open": false,
-      "url": "",
+      "url": "ourfood",
     },
     {
       "name": "Help & Support",
