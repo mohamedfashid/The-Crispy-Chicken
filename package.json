@@ -24,6 +24,7 @@
     "@angular/router": "^14.0.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.2",
+    "gh-pages": "^6.0.0",
     "gsap": "^3.12.2",
     "owl-carousel": "^1.0.0",
     "rxjs": "~7.5.0",
