@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MainService } from 'src/app/service/main.service';
 import { gsap } from 'gsap/all';
@@ -26,5 +26,12 @@ export class HeaderComponent implements   AfterViewInit {
 
   show(n:any){
     this.c_selected[n] = !this.c_selected[n];
+  }
+
+  isSticky: boolean = false;
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.isSticky = window.pageYOffset >= 250;
   }
 }
