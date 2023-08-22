@@ -87,6 +87,23 @@
 </div>
 <!-- About End -->
 
+<!-- Imgcaro Start -->
+<div class="bg-primary">
+    <div class="img-owl-carousel">
+        <div class=" owl-carousel img-carousel " data-aos="fade-up" data-aos-duration="1000">
+            <div class="img-item bg-transparent border rounded p-4" *ngFor="let item of this.imgcaro;">
+                <img [src]="item.img" alt="">
+            </div>
+        </div>
+        <div class="owl-theme">
+            <div class="owl-controls">
+                <div class="custom-nav owl-nav"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Imgcaro End -->
+
 <!-- Story Start -->
 <div class="container-xxl bg-yel py-5">
     <div class="container">
