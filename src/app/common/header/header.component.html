@@ -1,5 +1,5 @@
 <!-- Navbar & Hero Start -->
-<div class="header">
+<div class="header ">
   <div class="dub"> 
     <div class="container">
       <div class="d-flex gap-1  justify-content-end">
@@ -23,9 +23,9 @@
       </div>
     </div>
   </div>
-  <div class="container-xxl position-relative p-0" >
-    <nav class="navbar navbar-expand-lg navbar px-4 px-lg-5 py-3 py-lg-0">
-      <div class="container">
+  <div class="container-xxl p-0 " >
+    <nav class="navbar shadow navbar-expand-lg navbar px-4 px-lg-5 py-3 py-lg-0" [class.sticky-top]="this.isSticky">
+      <div class="container faunset-i">
         <a href="" class="navbar-brand p-0">
           <!-- <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1> -->
           <img src="assets/image/logo.jpg" alt="Logo" class="logo">
@@ -36,11 +36,11 @@
         <!-- <button class="btn btn-primary navbar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
           <span class="fa fa-bars"></span>
         </button> -->
-        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+        <button class="btn btn-primary d-lg-none fit-height" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
           <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0   ">
+          <div class="navbar-nav ms-auto py-0 h-100 align-items-stretch">
             <ng-container *ngFor="let item of this.service.menu; let i = index;">
               <!-- <a routerLink="{{item.url}}" class="nav-item nav-link">{{item.name}}</a> -->
               <div class="nav-item dropdown"  (mouseover)="hover(i)" (mouseout)="hover(-1)">

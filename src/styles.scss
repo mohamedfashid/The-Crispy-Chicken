@@ -47,6 +47,10 @@ b{
     font-family: "RobotoBold", sans-serif;
 }
 
+.h-100{
+  height: 100%;
+}
+
 .head{
   color: #FFFFFF;
   // font-family: "Rowdies", Sans-serif;
@@ -95,6 +99,11 @@ b{
 .white{
   color: #fff;
 }
+
+.fit-height{
+  height: fit-content;
+}
+
 //flex item
 
 
@@ -110,6 +119,10 @@ b{
 .fcenter{
   align-items: center;
   justify-content: center;
+}
+
+.faunset-i{
+  align-items: unset !important;
 }
 
 .space-between{

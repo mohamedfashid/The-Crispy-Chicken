@@ -32,6 +32,6 @@ export class HeaderComponent implements   AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    this.isSticky = window.pageYOffset >= 250;
+    this.isSticky = window.pageYOffset >= 50;
   }
 }
