@@ -101,6 +101,7 @@
         height: 0;
         transform: translateY(-5%);
         z-index: -1;
+        position: relative;
         transition: all 0.3s ease;
 
         &.show {
@@ -119,6 +120,11 @@
             padding: 10px 30px 10px 0px;
             border-bottom: 1px solid rgb(234, 235, 235);
             transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover{
+                color: rgb(234, 235, 235);
+            }
         }
     }
 }
@@ -255,4 +261,8 @@
 }
 *{
     transition: all 0.3s ease;
+}
+
+.fit-height{
+    height: fit-content;
 }

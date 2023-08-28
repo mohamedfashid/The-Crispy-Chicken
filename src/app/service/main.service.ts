@@ -26,7 +26,7 @@ export class MainService {
       "child": [
         {
           "name": "Franchise",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
+          "url": "/services/franchise",
         },
         {
           "name": "Catering",
@@ -61,20 +61,30 @@ export class MainService {
     {
       "name": "Our food",
       "open": false,
-      "url": "ourfood",
+      "url": "/ourfood",
+      "child": [
+        {
+          "name": "Halal Policy",
+          "url": "/ourfood/halal_policy",
+        },
+        {
+          "name": "Nutrition Facts",
+          "url": "/ourfood/nutrition_facts",
+        },
+      ]
     },
     {
       "name": "Help & Support",
       "open": false,
-      "url": "",
+      "url": "/help",
       "child": [
         {
           "name": "FAQs",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
+          "url": "/help/faq",
         },
         {
           "name": "Terms & Conditions",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
+          "url": "/help/T&C",
         },
       ]
     },

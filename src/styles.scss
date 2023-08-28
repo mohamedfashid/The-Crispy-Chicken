@@ -1,9 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 // @import "~bootstrap/dist/css/bootstrap.css";
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400&display=swap");
-@import "/src/variable.scss";
 
-@import "~bootstrap/dist/css/bootstrap.css";
+// @import "/src/variable.scss";
+@import "/src/varcolor.scss";
+
+/******* Customized Bootstrap ********/
+
+$primary: #e00614;
+$secondary: #fff;
+$tertiary: #464543;
+
+  // $light: #F1F8FF;
+  $light:#0000000f;
+$grey:#464543;
+$dark: #0F172B;
+
+$body-bg: $secondary;
+
+$body-color: #666565;
+
+$headings-color: $dark;
+
+$headings-font-weight: 800;
+
+$display-font-weight: 800;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 2px;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+$offcanvas-width: 150px;
+
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
 
 @font-face {
   font-family: "Roboto";
@@ -42,10 +76,15 @@ body {
   height: 100%;
   // overflow: hidden;
   background-color: #fff;
+  font-size: 18px;
 }
 
 b {
   font-family: "RobotoBold", sans-serif;
+}
+
+.bold {
+font-family: "RobotoBold", sans-serif;
 }
 
 .h-100{
@@ -99,10 +138,21 @@ b {
   background-color: $light;
 }
 
+.section{
+  padding: 50px 0px;
+}
 .white {
   color: #fff;
 }
 
+.w-100{
+  width: 100%;
+  
+}
+
+.f-20{
+  font-size: 20px;
+}
 //flex item
 
 
@@ -142,7 +192,6 @@ b {
 
 .container-xxl {
   max-width: unset !important;
-  padding: 4rem 0 !important;
 }
 
 //bootstrap overwrite//
@@ -201,7 +250,6 @@ b {
 
 .img-carousel .owl-item .img-item {
   width: 100%;
-  height: 500px !important;
 }
 
 .img-carousel .owl-item.center .img-item {
@@ -283,4 +331,67 @@ b {
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
   border-color: var(--primary);
+}
+
+
+/*** Section Title ***/
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-family: "RowdiesRegular";
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+  display: none;
+}
+
+
+
+//////aos
+
+
+@media only screen and (max-width: 768px) {
+  .aos-animate {
+
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
 }

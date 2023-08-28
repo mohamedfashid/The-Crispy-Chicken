@@ -1,5 +1,9 @@
 @import "../../../variable.scss";
 
+*{
+  color: #fff !important;
+}
+
 
 .mainlist{
     color: #fff;
@@ -12,9 +16,6 @@
     }
 }
 
-.width-fit{
-    width: fit-content !important;
-}
 
 .f-22{
     font-size:22px
@@ -28,7 +29,9 @@ h3{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
+.wid{
+  width: 180px;
+}
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
@@ -93,3 +96,6 @@ h3{
     padding-right: 0;
     border-right: none;
   }
+
+
+  

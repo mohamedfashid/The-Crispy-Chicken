@@ -85,24 +85,16 @@ export class HomeComponent implements AfterViewInit {
 
   imgcaro = [
     {
-      "img": "assets/images/hero.png",
-      "con": "Our secret spices mixture, carefully crafted and closely guarded, elevates our fried chicken and beef steak to a level that is simply irresistible."
+      "img": "assets/image/caro/caro1.jpg",
     },
     {
-      "img": "assets/images/hero.png",
-      "con": "We never compromise on freshness. Every item on our menu is prepared to order, ensuring that our customers experience the fullness of flavor in every bite."
+      "img": "assets/image/caro/caro2.jpg",
     },
     {
-      "img": "assets/images/hero.png",
-      "con": "We adhere to the highest standards of cleanliness and hygiene in our preparation process, guaranteeing that our food is not only delicious but also safe for consumption."
+      "img": "assets/image/caro/caro3.jpg",
     },
     {
-      "img": "assets/images/hero.png",
-      "con": "Our dedication to providing healthier options sets us apart from conventional fast-food chains. We are committed to catering to the needs of health-conscious consumers without compromising on taste."
-    },
-    {
-      "img": "assets/images/hero.png",
-      "con": "Participate in the creation of new menu items and stay ahead of evolving food trends"
+      "img": "assets/image/caro/caro4.jpg",
     },
   ]
 
@@ -129,32 +121,6 @@ export class HomeComponent implements AfterViewInit {
     },
   ]
 
-  card = [
-    {
-      "title": "Established Brand",
-      "content": "Join a recognized brand with a loyal customer base and a reputation for excellence.",
-      "img": "fa-3x fa-regular fa-copyright",
-    },
-    {
-      "title": "Proven Business Model",
-      "content": "Benefit from a time-tested business model that has proven successful in multiple locations.",
-      "img": "fa-3x fa-solid fa-briefcase",
-    },
-    {
-      "title": "Training and Support",
-      "content": "Receive comprehensive training and ongoing support from our experienced team to help you run your franchise smoothly.",
-      "img": "fa fa-3x fa-user-tie",
-    },
-    {
-      "title": "Marketing Assistance",
-      "content": "Avail of marketing strategies and materials to boost your presence in the local market and attract more customers.",
-      "img": "fa-3x fa-solid fa-chart-simple",
-    },
-    // {
-    //   "title": "Menu Innovation",
-    //   "content": "Participate in the creation of new menu items and stay ahead of evolving food trends",
-    //   "img": "fa-3x fa-solid fa-lightbulb",
-    // },
-  ]
+
 
 }
