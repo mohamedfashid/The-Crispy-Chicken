@@ -185,3 +185,11 @@
 //     width: 100%;
 //     background-color: #fff;
 //   }
+
+.formfill{
+  padding: 0px 50px;
+
+  @include md{
+    padding: 0;
+  }
+}

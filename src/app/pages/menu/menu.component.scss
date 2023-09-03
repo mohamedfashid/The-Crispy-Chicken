@@ -54,7 +54,7 @@
     color: $primary;
     border-radius: 10px;
     font-family: "RobotoBoldItalic";
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     cursor: pointer;
 
     &:hover{
@@ -93,11 +93,11 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     .card-img-top {
       text-align: center;
-      padding: 10px;
+      padding: 20px 10px;
     }
     .card-body {
       background-color: $primary;
-      padding: 10px 0;
+      padding: 10px 0 20px 0px;
       border-radius: 10px;
       color: #fff;
       display: flex;
