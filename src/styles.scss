@@ -432,10 +432,20 @@ h1{
   }
   
   @include sm {
-    padding: 40px 0px;
+    padding: 40px 10px;
   }
 
 }
+
+///media-query
+
+@include sm {
+  h5{
+    font-size: 0.9rem;
+  }
+}
+
+
 .bg-grey{
   background-color: #f7f6f2;
 }
