@@ -34,25 +34,25 @@
 
 
 <!-- About Start -->
-<div class="container-xxl  py-5">
+<div class="container-xxl section">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                <!-- <div class="row g-3">
+                <div class="row g-3">
                     <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-100 src="img/about-1.jpg">
+                        <img class="img-fluid rounded w-100" src="assets/image/c1.png">
                     </div>
                     <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-75 src="img/about-2.jpg" style="margin-top: 25%;">
+                        <img class="img-fluid rounded w-75" src="assets/image/c2.png" style="margin-top: 25%;">
                     </div>
                     <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-75 src="img/about-3.jpg">
+                        <img class="img-fluid rounded w-75" src="assets/image/c3.png">
                     </div>
                     <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-100 src="img/about-4.jpg">
+                        <img class="img-fluid rounded w-100" src="assets/image/c4.png">
                     </div>
-                </div> -->
-                <img src="assets/image/signature_sandwich.png" alt="" class="img-fluid">
+                </div>
+                <!-- <img src="assets/image/signature_sandwich.png" alt="" class="img-fluid"> -->
             </div>
             <div class="col-lg-6">
                 <h5 class="section-title ff-secondary text-start text-primary fw-normal" data-aos="fade-right" data-aos-duration="1000">About Us</h5>
@@ -106,7 +106,7 @@
 <!-- Imgcaro End -->
 
 <!-- Story Start -->
-<div class="container-xxl bg-yel py-5">
+<div class="container-xxl bg-yel section">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
@@ -117,7 +117,7 @@
                 <p class="mb-4" data-aos="fade-up" data-aos-duration="1000">With a relentless focus on quality, we source only the finest ingredients for our menu items. From farm-fresh chicken to tender, juicy beef steak, every bite is an explosion of taste and satisfaction. Our commitment to hygiene and health ensures that our customers can indulge without worry, savoring the flavors guilt-free.</p>
             </div>
             <div class="col-lg-6" >
-                <div class="row g-3">
+                <!-- <div class="row g-3">
                     <div class="col-6 text-end" data-aos="zoom-in" data-aos-delay="500">
                         <img class="img-fluid rounded w-75 " src="assets/image/c2.png" style="margin-top: 25%;">
                     </div>
@@ -130,8 +130,8 @@
                     <div class="col-6 text-start" data-aos="zoom-in" data-aos-delay="2000">
                         <img class="img-fluid rounded w-75" src="assets/image/c4.png">
                     </div>
-                </div>
-                <!-- <img src="assets/image/Chicken.png" alt="" class="img-fluid"> -->
+                </div> -->
+                <img src="assets/image/signature_sandwich.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
@@ -139,16 +139,21 @@
 <!-- Story End -->
 
 <!-- Testimonial Start -->
-<div class="container-xxl py-5">
+<div class="container-xxl section pattern2">
     <div class="container">
         <div class="text-center">
             <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-aos="fade-right" data-aos-duration="1000">Why Us?</h5>
             <h1 class="mb-5" data-aos="fade-up" data-aos-duration="1000">The Crispy Chicken Difference</h1>
         </div>
-        <div class="owl-carousel testimonial-carousel" data-aos="fade-up" data-aos-duration="1000">
-            <div class="testimonial-item bg-transparent border rounded p-4" *ngFor="let item of this.caro;">
-                <h4>{{item.head}}:</h4>
-                <p>{{item.con}}</p>
+        <div class="owl-carousel testimonial-carousel py-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="testimonial-item p-1" *ngFor="let item of this.caro;">
+                <div class="testi">
+                    <div class="imgrel"><img [src]="item.img" alt=""></div>
+                    <div class="p-3">
+                        <h4>{{item.head}}:</h4>
+                        <p>{{item.con}}</p>
+                    </div>
+                </div>
             </div>
 
             <!-- <div class="testimonial-item bg-transparent border rounded p-4">
@@ -201,7 +206,7 @@
 <!-- Testimonial End -->
 
 <!-- Join Start -->
-<div class="container-xxl py-5">
+<div class="container-xxl section   ">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">

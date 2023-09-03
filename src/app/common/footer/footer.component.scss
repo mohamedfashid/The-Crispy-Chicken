@@ -1,8 +1,13 @@
-@import "../../../variable.scss";
+@import "../../../varcolor.scss";
 
-*{
-  color: #fff !important;
+
+.bgimg{
+  background: linear-gradient(rgb(15 23 43 / 92%), rgba(15 23 43 / 92%)), url(../../../assets/image/footer.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 
 .mainlist{
@@ -32,7 +37,11 @@ h3{
 .wid{
   width: 180px;
 }
+
 /*** Footer ***/
+.footer{
+  color: #fff;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -40,14 +49,16 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: $secondary ;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
   }
   
   .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: $primary !important;
+
+    
   }
   
   .footer .btn.btn-link {
@@ -82,7 +93,7 @@ h3{
   }
   
   .footer .copyright a {
-    color: var(--light);
+    color: $light;
   }
   
   .footer .footer-menu a {

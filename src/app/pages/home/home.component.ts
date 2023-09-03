@@ -60,7 +60,7 @@ export class HomeComponent implements AfterViewInit {
     });
 
     $(".owl-carousel").owlCarousel({
-      autoplay: false,
+      autoplay: true,
       smartSpeed: 1000,
       center: true,
       margin: 24,
@@ -72,7 +72,7 @@ export class HomeComponent implements AfterViewInit {
           items: 1
         },
         768: {
-          items: 2
+          items: 1
         },
         992: {
           items: 3
@@ -101,23 +101,28 @@ export class HomeComponent implements AfterViewInit {
   caro = [
     {
       "head": "Signature Spices",
-      "con": "Our secret spices mixture, carefully crafted and closely guarded, elevates our fried chicken and beef steak to a level that is simply irresistible."
+      "con": "Our secret spices mixture, carefully crafted and closely guarded, elevates our fried chicken and beef steak to a level that is simply irresistible.",
+      "img": "assets/image/cater/img1.jpg"
     },
     {
       "head": "Freshness at Its Best",
-      "con": "We never compromise on freshness. Every item on our menu is prepared to order, ensuring that our customers experience the fullness of flavor in every bite."
+      "con": "We never compromise on freshness. Every item on our menu is prepared to order, ensuring that our customers experience the fullness of flavor in every bite.",
+      "img": "assets/image/cater/img2.jpg"
     },
     {
       "head": "Hygiene First",
-      "con": "We adhere to the highest standards of cleanliness and hygiene in our preparation process, guaranteeing that our food is not only delicious but also safe for consumption."
+      "con": "We adhere to the highest standards of cleanliness and hygiene in our preparation process, guaranteeing that our food is not only delicious but also safe for consumption.",
+      "img": "assets/image/cater/img3.jpg"
     },
     {
       "head": "Health-conscious Choices",
-      "con": "Our dedication to providing healthier options sets us apart from conventional fast-food chains. We are committed to catering to the needs of health-conscious consumers without compromising on taste."
+      "con": "Our dedication to providing healthier options sets us apart from conventional fast-food chains. We are committed to catering to the needs of health-conscious consumers without compromising on taste.",
+      "img": "assets/image/fried-chick.webp"
     },
     {
       "head": "Menu Innovation",
-      "con": "Participate in the creation of new menu items and stay ahead of evolving food trends"
+      "con": "Participate in the creation of new menu items and stay ahead of evolving food trends",
+      "img": "assets/image/bulb.jpg"
     },
   ]
 

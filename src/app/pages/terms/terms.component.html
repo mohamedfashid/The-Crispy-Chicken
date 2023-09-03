@@ -1,14 +1,14 @@
 <app-breadcrum [value]="[5,1]"></app-breadcrum>
 
-<section class="terms">
+<section class="terms section">
     <div class="container">
         <div class="text-center">
             <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-aos="fade-right" data-aos-duration="1000">Understanding Our </h5>
             <h1 class="mb-4" data-aos="fade-up" data-aos-duration="1000">Terms & Conditions</h1>
           </div>
         <ng-container *ngFor="let item of terms; let j = index;">
-            <h6>{{j+1}}. {{item.topic}}</h6>
-            <p class="mb-4">{{item.desc}}</p>
+            <h6 data-aos="fade-up" data-aos-duration="1000">{{j+1}}. {{item.topic}}</h6>
+            <p class="mb-4" data-aos="fade-up" data-aos-duration="1000">{{item.desc}}</p>
         </ng-container>
     </div>
 </section>
