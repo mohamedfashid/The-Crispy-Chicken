@@ -46,6 +46,10 @@
   opacity: 0;
 }
 
+.hom_txt{
+  max-width: 500px;
+}
+
 .image {
   opacity: 1;
   cursor: pointer;
@@ -322,9 +326,12 @@
   background-size: cover;
 }
 
-.hero-header img {
+.hero-header .pan {
   animation: imgRotate 50s linear infinite;
+ 
 }
+
+
 
 @keyframes imgRotate {
   100% {
