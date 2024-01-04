@@ -33,7 +33,34 @@ export class HomeComponent implements AfterViewInit {
     this.tl.fromTo(".zoom", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 1 })
     this.tl.fromTo(".but", { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 1.5 })
 
-    $(".img-owl-carousel .owl-carousel").owlCarousel({
+    $(".img-owl-carousel1 .owl-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      center: true,
+      margin: 24,
+      dots: false,
+      loop: true,
+      nav: true,
+      navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    navContainer: '.img-owl-carousel .custom-nav',
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        992: {
+          items: 1
+        }
+      }
+    });
+
+    
+    $(".img-owl-carousel2 .owl-carousel").owlCarousel({
       autoplay: true,
       smartSpeed: 1000,
       center: true,
