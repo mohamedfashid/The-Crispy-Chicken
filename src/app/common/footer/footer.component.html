@@ -1,5 +1,5 @@
 <!-- Footer Start -->
-<div class="container-fluid bg-dark text-light footer pt-5 mt-5" >
+<div class="container-fluid bg-dark text-light footer pt-5" >
     <div class="container py-5">
         <div class="row g-5">
             <!-- <div class="col-lg-4 width-fit col-md-6">
@@ -15,17 +15,20 @@
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div> -->
-            <div class="col-lg-6 width-fit col-md-6">
+            <div class="col-lg-3 width-fit text-center col-md-6">
+                <img src="assets/image/logo-1.png" alt="Logo" title="The Crispy Chicken" class="img-fluid wid">
+            </div>
+            <div class="col-lg-3 width-fit col-md-6">
                 <h3 class="rowdies white  text-start mb-4">Contact:</h3>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
             </div>
-            <div class="col-lg-6 width-fit col-md-6">
+            <div class="col-lg-3 width-fit col-md-6">
                 <h3 class="rowdies white  text-start mb-4">Our Outlets:</h3>
                 Singapore | Malaysia
             </div>
-            <div class="col-lg-4 width-fit col-md-6">
+            <div class="col-lg-3 width-fit col-md-6">
                 <h3 class="rowdies white  text-start mb-4">Follow Us:</h3>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -63,10 +66,10 @@
     </div>
     <div class="bor"></div>
     <div class="container my-5">
-        <h3 class="rowdies white  text-start mb-4">Company:</h3>
-        <div class="row g-5">
+        <!-- <h3 class="rowdies white  text-center mb-4">Company:</h3> -->
+        <div class=" row fjcenter g-5">
             <ng-container *ngFor="let item of this.service.menu; let i = index;">
-                <div class="col-lg-3 col-md-3 width-fit" *ngIf="i !== 0">
+                <div class="col-lg-2 col-md-6 width-fit" *ngIf="i !== 0">
                     <div class="fff c-pointer mainlist" [routerLink]="item.url"><b>{{item.name}}</b></div>
                     <ng-container *ngFor="let item1 of item.child; let j = index;">
                         <a class="btn btn-link" [routerLink]="item1.url">{{item1.name}}</a>
@@ -93,3 +96,4 @@
     </div>
 </div>
 <!-- Footer End -->
+

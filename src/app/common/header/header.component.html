@@ -1,5 +1,5 @@
 <!-- Navbar & Hero Start -->
-<div class="header">
+<div class="header ">
   <div class="dub"> 
     <div class="container">
       <div class="d-flex gap-1  justify-content-end">
@@ -23,9 +23,9 @@
       </div>
     </div>
   </div>
-  <div class="container-xxl position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar px-4 px-lg-5 py-3 py-lg-0">
-      <div class="container">
+  <div class="container-xxl p-0 " >
+    <nav class="navbar shadow navbar-expand-lg navbar px-4 px-lg-5 py-3 py-lg-0" [class.sticky-top]="this.isSticky">
+      <div class="container faunset-i">
         <a href="" class="navbar-brand p-0">
           <!-- <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1> -->
           <img src="assets/image/logo.jpg" alt="Logo" class="logo">
@@ -36,18 +36,18 @@
         <!-- <button class="btn btn-primary navbar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
           <span class="fa fa-bars"></span>
         </button> -->
-        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+        <button title="Menu" class="btn btn-primary d-lg-none fit-height mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
           <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0   ">
+          <div class="navbar-nav ms-auto py-0 h-100 align-items-stretch">
             <ng-container *ngFor="let item of this.service.menu; let i = index;">
               <!-- <a routerLink="{{item.url}}" class="nav-item nav-link">{{item.name}}</a> -->
               <div class="nav-item dropdown"  (mouseover)="hover(i)" (mouseout)="hover(-1)">
                 <a   class="nav-link rel" [routerLink]="item.url" routerLinkActive="active" [class.dropdown-toggle]="item.child" data-bs-toggle="dropdown">{{item.name}} <span><img src="assets/image/halal-logo.png" alt="" class="halal_s" *ngIf="item.name == 'Our food'"></span></a>
                 <div class="dropdown-menu m-0" *ngIf="item.child" [class.show]="this.selected == i">
                   <ng-container *ngFor="let item1 of this.item.child; let j = index;">
-                    <a routerLink="{{item1.url}}" class="dropdown-item">{{item1.name}}</a>
+                    <a routerLink="{{item1.url}}" class="dropdown-item c-pointer">{{item1.name}}</a>
                   </ng-container>
                 </div>
               </div>
@@ -88,7 +88,7 @@
 </div> -->
 
 
-<div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+<div class="offcanvas-lg offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
   <div class="offcanvas-header pb-0">
     <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
     <div><img src="assets/image/CCChicken.png" alt="" class="sb_img"></div>
@@ -102,12 +102,12 @@
             <!-- <a routerLink="{{item.url}}" class="nav-item nav-link">{{item.name}}</a> -->
             <div class="sidebar" (click)="show(i)" >
               <div class="main">
-                <div class="rel">{{item.name}} <span><img src="assets/image/halal-logo.png" alt="" class="halal_l" *ngIf="item.name == 'Our food'"></span></div>
+                <div class="rel" routerLink="{{item.url}}">{{item.name}} <span><img src="assets/image/halal-logo.png" alt="" class="halal_l" *ngIf="item.name == 'Our food'"></span></div>
                 <div class="plus" [class.minus]="this.c_selected[i]" *ngIf="item.child"></div>
               </div>
               <ul *ngIf="item.child" [class.show]="this.c_selected[i]">
                 <ng-container *ngFor="let item1 of this.item.child; let j = index;">
-                    <li routerLink="{{item1.url}}">{{item1.name}}</li>
+                    <li routerLink="{{item1.url}}" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive">{{item1.name}}</li>
                 </ng-container>
               </ul>
             </div>

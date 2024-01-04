@@ -11,7 +11,7 @@ export class HomeComponent implements AfterViewInit {
 
   constructor() { }
 
-  
+
   tl = gsap.timeline();
   ngAfterViewInit(): void {
     // this.tl.fromTo(".anim-typewriter", 8, {
@@ -29,31 +29,74 @@ export class HomeComponent implements AfterViewInit {
     //   ease: SteppedEase.config(37)
     // }, 0);
 
-    this.tl.fromTo(".txt", { opacity: 0,}, { opacity: 1,duration: 2, delay:2 })
-    this.tl.fromTo(".zoom", { opacity: 0, scale:0}, { opacity: 1, scale:1 , duration: 1 })
-    this.tl.fromTo(".but", { opacity: 0, x:-100}, { opacity: 1, x:0 , duration: 1.5 })
+    this.tl.fromTo(".txt", { opacity: 0, }, { opacity: 1, duration: 2, delay: 2 })
+    this.tl.fromTo(".zoom", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 1 })
+    this.tl.fromTo(".but", { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 1.5 })
 
-      $(".owl-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        margin: 24,
-        dots: true,
-        loop: true,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
+    $(".img-owl-carousel .owl-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      center: true,
+      margin: 24,
+      dots: false,
+      loop: true,
+      nav: true,
+      navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    navContainer: '.img-owl-carousel .custom-nav',
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        992: {
+          items: 1
         }
+      }
     });
+
+    $(".owl-carousel").owlCarousel({
+      autoplay: false,
+      smartSpeed: 1000,
+      center: true,
+      margin: 24,
+      dots: true,
+      loop: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        992: {
+          items: 3
+        }
+      }
+    });
+
+    
   }
+
+  imgcaro = [
+    {
+      "img": "assets/image/caro/caro1.jpg",
+    },
+    {
+      "img": "assets/image/caro/caro2.jpg",
+    },
+    {
+      "img": "assets/image/caro/caro3.jpg",
+    },
+    {
+      "img": "assets/image/caro/caro4.jpg",
+    },
+  ]
 
   caro = [
     {
@@ -78,32 +121,6 @@ export class HomeComponent implements AfterViewInit {
     },
   ]
 
-  card = [
-    {
-      "title": "Established Brand",
-      "content": "Join a recognized brand with a loyal customer base and a reputation for excellence.",
-      "img": "fa-3x fa-regular fa-copyright",
-    },
-    {
-      "title": "Proven Business Model",
-      "content": "Benefit from a time-tested business model that has proven successful in multiple locations.",
-      "img": "fa-3x fa-solid fa-briefcase",
-    },
-    {
-      "title": "Training and Support",
-      "content": "Receive comprehensive training and ongoing support from our experienced team to help you run your franchise smoothly.",
-      "img": "fa fa-3x fa-user-tie",
-    },
-    {
-      "title": "Marketing Assistance",
-      "content": "Avail of marketing strategies and materials to boost your presence in the local market and attract more customers.",
-      "img": "fa-3x fa-solid fa-chart-simple",
-    },
-    // {
-    //   "title": "Menu Innovation",
-    //   "content": "Participate in the creation of new menu items and stay ahead of evolving food trends",
-    //   "img": "fa-3x fa-solid fa-lightbulb",
-    // },
-  ]
+
 
 }
