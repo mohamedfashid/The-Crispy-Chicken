@@ -14,6 +14,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NutritionComponent } from './pages/nutrition/nutrition.component';
 import { HalalPolicyComponent } from './pages/halal-policy/halal-policy.component';
 import { FranchiseComponent } from './pages/franchise/franchise.component';
+import { CateringComponent } from './pages/catering/catering.component';
+import { MenuComponent } from './pages/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FranchiseComponent } from './pages/franchise/franchise.component';
     ContactComponent,
     NutritionComponent,
     HalalPolicyComponent,
-    FranchiseComponent
+    FranchiseComponent,
+    CateringComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NutritionComponent } from './pages/nutrition/nutrition.component';
 import { HalalPolicyComponent } from './pages/halal-policy/halal-policy.component';
 import { FranchiseComponent } from './pages/franchise/franchise.component';
+import { CateringComponent } from './pages/catering/catering.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   {
@@ -19,8 +22,20 @@ const routes: Routes = [
     component : HomeComponent
   },
   {
+    path : "about",
+    component : AboutComponent
+  },
+  {
+    path : "menu",
+    component : MenuComponent
+  },
+  {
     path : "services/franchise",
     component : FranchiseComponent
+  },
+  {
+    path : "services/catering_&_party",
+    component : CateringComponent
   },
   {
     path : "help/faq",

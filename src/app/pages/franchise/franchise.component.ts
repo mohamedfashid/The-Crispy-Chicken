@@ -40,4 +40,37 @@ export class FranchiseComponent implements OnInit {
     // },
   ]
 
+  cardnew = [
+    {
+      "title": "Submit Your Inquiry",
+      "content": "Fill out the franchise inquiry form below to express your interest in joining our franchise family. ",
+      "img": "fa-3x fa-solid fa-square-phone",
+    },
+    {
+      "title": "Initial Consultation ",
+      "content": "Our team will reach out to schedule an initial consultation to discuss your business goals and answer any questions you may have.",
+      "img": "fa-3x fa-solid fa-briefcase",
+    },
+    {
+      "title": "Location Selection",
+      "content": "We'll work together to find the ideal location for your Crispy Chicken restaurant.",
+      "img": "fa-3x fa-solid fa-map-location",
+    },
+    {
+      "title": "Franchise Agreement",
+      "content": "Review and sign the franchise agreement, outlining the terms and conditions of our partnership. ",
+      "img": "fa-3x fa-solid fa-handshake",
+    },
+    {
+      "title": "Training and Support",
+      "content": "Attend our comprehensive training program to equip you with all the knowledge needed to run a successful Crispy Chicken franchise. ",
+      "img": "fa-3x fa-solid fa-headset",
+    },
+    {
+      "title": "Grand Opening",
+      "content": " With our support, launch your Crispy Chicken restaurant with a grand opening event that attracts customers from day one. ",
+      "img": "fa-3x fa-solid fa-shop",
+    },
+  ]
+
 }

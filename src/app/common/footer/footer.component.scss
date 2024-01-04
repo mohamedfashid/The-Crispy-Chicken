@@ -1,8 +1,39 @@
-@import "../../../variable.scss";
+@import "../../../varcolor.scss";
 
-*{
-  color: #fff !important;
+
+.bgimg{
+  background: linear-gradient(rgb(15 23 43 / 92%), rgba(15 23 43 / 92%)), url(../../../assets/image/footer.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.colalign{
+  display: flex;
+  flex-direction: column;
+  // gap: 5px;
+  line-height: 1.5;
+}
+
+.flag {
+  position: relative;
+  width: 22px;
+  height: 16px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.france {
+  background: linear-gradient(
+    to right,
+    #192f8e 33%,
+    #fff 33%,
+    #fff 67%,
+    #e01414 0
+  );
+}
+
+
 
 
 .mainlist{
@@ -32,7 +63,11 @@ h3{
 .wid{
   width: 180px;
 }
+
 /*** Footer ***/
+.footer{
+  color: #fff;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -40,14 +75,16 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: $secondary ;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
   }
   
   .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: $primary !important;
+
+    
   }
   
   .footer .btn.btn-link {
@@ -82,13 +119,14 @@ h3{
   }
   
   .footer .copyright a {
-    color: var(--light);
+    color: $light;
   }
   
   .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
+    color: #fff;
   }
   
   .footer .footer-menu a:last-child {

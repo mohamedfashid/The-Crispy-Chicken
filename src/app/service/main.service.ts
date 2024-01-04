@@ -29,30 +29,31 @@ export class MainService {
           "url": "/services/franchise",
         },
         {
-          "name": "Catering",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
-        },
-        {
-          "name": "Party",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
+          "name": "Catering and Party",
+          "url": "services/catering_&_party",
         },
       ]
     },
     {
       "name": "About us",
       "open": false,
-      "url": "/aboutus",
-      "child": [
-        {
-          "name": "CC India",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
-        },
-        {
-          "name": "Join us",
-          "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
-        },
-      ]
+      "url": "/about",
+      // "child": [
+      //   {
+      //     "name": "CC India",
+      //     "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
+      //   },
+      //   {
+      //     "name": "Join us",
+      //     "url": "https://degreed.com/pathway/o84qlvqlp4/pathway",
+      //   },
+      // ]
     },
+    {
+      "name": "Menu",
+      "open": false,
+      "url": "/menu",
+    },  
     {
       "name": "Contact us",
       "open": false,

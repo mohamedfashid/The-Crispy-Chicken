@@ -22,7 +22,7 @@
 
     
  <!-- Service Start -->
- <div class="container-xxl section-light py-5">
+ <div class="container-xxl section pattern1">
     <div class="container">
         <div class="text-center">
             <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-aos="fade-right" data-aos-duration="1000">Benefit With Us</h5>
@@ -428,9 +428,43 @@
 </div> -->
 <!-- Menu End -->
 
+<!-- Join -->
+<div class="bgItem section">
+    <div class="container mb-5 px-5 mx-5">
+        <div class="text-center">
+            <!-- <h5 class="section-title ff-secondary text-center text-secondary fw-normal" data-aos="fade-right" data-aos-duration="1000">Benefit With Us</h5> -->
+            <h1 class="text-secondary mb-4" data-aos="fade-up" data-aos-duration="1000">Join Our Family of Entrepreneurs</h1>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000">If you share our passion for providing delicious food with top-notch customer service, we want to hear from you! The Crispy Chicken offers a range of franchise options to suit your goals and location preferences.</p>
+    </div>
+
+    <div class="container " data-aos="fade-up" data-aos-duration="1000">
+        <div class="divider"></div>
+    </div>
+
+    <div class="text-center my-5 mt-5 pb-3">
+        <!-- <h5 class="section-title ff-secondary text-center text-secondary fw-normal" data-aos="fade-right" data-aos-duration="1000">Benefit With Us</h5> -->
+        <h1 class="text-secondary mb-5" data-aos="fade-up" data-aos-duration="1000">Steps to Become a Franchisee:</h1>
+    </div>
+    <div class="row g-4 facenter bg-primary">
+        <ng-container *ngFor="let item of this.cardnew">
+            <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+                <div class="cardnew">
+                    <div class="p-4 text-center">
+                        <div class="icon"><i class="{{item.img}} text-primary mb-4"></i></div>
+                        <h5 class="text-secondary">{{item.title}}</h5>
+                        <p>{{item.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+  </div>
+</div>
+<!-- Join -->
+
 
 <!-- Reservation Start -->
-<div class="container-xxl bg-dark px-5 py-5">
+<div class="container-xxl bg-dark px-5 section">
     <div class="row g-0">
         <!-- <div class="col-md-6">
             <div class="video">
@@ -440,12 +474,12 @@
             </div>
         </div> -->
         <div class="col-lg-6 bg-dark">
-            <img src="assets/image/about-img1.png" alt="" class="img-fluid" data-aos="fade-left" data-aos-duration="1000">
+            <img src="assets/image/about-img1.png" alt="" class="img-fluid d-none d-sm-none d-md-block" data-aos="fade-left" data-aos-duration="1000">
         </div>
         <div class="col-md-6 bg-dark d-flex align-items-center">
-            <div class="p-5">
+            <div class="formfill">
                 <h5 class="section-title ff-secondary text-start text-primary fw-normal" data-aos="fade-right" data-aos-duration="1000">Be Part Of Us</h5>
-                <h1 class="text-white mb-4" data-aos="fade-up" data-aos-duration="1000">Fill Up Your Details</h1>
+                <h1 class="text-secondary mb-4" data-aos="fade-up" data-aos-duration="1000">Fill Up Your Details</h1>
                 <form>
                     <div class="row g-3" data-aos="fade-up" data-aos-duration="1000">
                         <div class="col-md-12">
