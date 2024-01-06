@@ -498,3 +498,10 @@ h1{
     animation: none !important;
   }
 }
+
+.colalign{
+  display: flex;
+  flex-direction: column;
+  // gap: 5px;
+  line-height: 1.5;
+}
